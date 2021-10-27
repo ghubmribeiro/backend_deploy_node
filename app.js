@@ -30,7 +30,7 @@ app.post("/api/postAds", async(request, response) =>{
 
 // postman get -> localhost:4500/api/getAds
 
-app.get("/api/getAds", async (response) => {
+app.get("/api/getAds", async (request, response) => {
 	const Ads = await myAd.find()
 
 	response.send(Ads)
