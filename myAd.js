@@ -6,10 +6,6 @@ const Ad = new db.Schema(
             type: String,
             required: true,
         },
-        Body:{
-            type: String,
-            required: true,
-        },
         Url:{
             type: String,
             required: true,
