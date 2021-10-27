@@ -39,6 +39,6 @@ app.get("/api/getAds", async (response) => {
 
 
 app.listen(PORT, () =>{
-    console.log("Server is now running...")
+    console.log("Server running at http://localhost:" + PORT)
 
 });
