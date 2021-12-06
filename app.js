@@ -31,12 +31,15 @@ app.post("/api/postAds", async(request, response) =>{
 // postman get -> localhost:4500/api/getAds
 // https://backendadverts.herokuapp.com/api/getAds
 
-app.get("/api/getAds", async (request, response) => {
-	const Ads = await myAd.find()
+// app.get("/api/getAds", async (request, response) => {
+// 	const Ads = await myAd.find()
 
-	response.send(Ads)
+// 	response.send(Ads)
 
-});
+// });
+
+const adGetRoute = require("./getAds");
+app.use("/getAds", adGetRoute);
 
 
 app.listen(PORT, () =>{
